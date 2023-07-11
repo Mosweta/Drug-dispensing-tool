@@ -29,16 +29,24 @@ session_start();
       <?php
       if (isset($_SESSION["userid"])) {
       ?>
-        <a href="#"><?php echo $_SESSION["useruid"]; ?></a>
+        <a href="#"><?php echo "    Welcome   ";
+
+                    echo $_SESSION["useruid"]; ?></a>
         <a href="includes/logout.inc.php">Logout</a>
       <?php
       } else {
       ?>
         <a href=" signup.php">Signup</a>
-        <button class="btnLogin-popup">Login</button>
+
       <?php
       }
       ?>
+      <button onclick="redirectToLoginpage()">Login</button>
+      <script>
+        function redirectToLoginpage() {
+          window.location.href = "logpage.php";
+        }
+      </script>
     </nav>
   </header>
 </body>
