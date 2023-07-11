@@ -1,0 +1,19 @@
+h1 {
+color: blue;
+}
+
+.one{
+    background-color: yellow;
+    border: solid 2px black;
+}
+li em {
+    color: red;
+    font-size: 300%;
+}
+
+  h1 + p+ p{
+    font-size: 200%;
+    font-style: italic;
+    font-family: sans-serif;
+
+}
