@@ -1,52 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require_once("Welcome.php");
+require_once("Connecting.php"); // Include your database connection file
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial scale=1.0" />
-  <meta name="keywords" content="HTML,CSS,JS" />
-  <meta name="description" content="..." />
-  <title>SunCityHospital</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+// Handle login form submission
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
-<body>
-  <header>
-    <h2 class="logo">
-      <img src="images/SCH 2.jpg" alt="S.C.H logo" width="100px" height="80px" border-radius="50px" 6px; />
-    </h2>
-    <nav class="navigation">
-      <a href="index.php">Home</a>
-      <a href="about.php">About</a>
-      <a href="services.php">Services</a>
-      <a href="contact.php">Contact</a>
-      <a href="login.php">Login</a>
+    // Check if username and password are valid
+    if (isValidUser($username, $password, $pdo)) {
+        session_start();
+        $_SESSION["username"] = $username;
+        header("Location: welcome.php"); // Redirect to the welcome page after successful login
+        exit();
+    } else {
+        // Invalid credentials, show an error message
+        echo "Invalid username or password.";
+    }
+}
 
-    </nav>
-  </header>
-  <h2>Login</h2>
-  <form class="" action="includes/signup.inc.php" method="post" autocomplete="off">
-    <label for="username">Username : </label>
-    <input type="text" name="uid" id="uid" required value=""> <br>
-    <label for="email">Email : </label>
-    <input type="email" name="email" id="email" required value=""> <br>
-    <label for="password">Password : </label>
-    <input type="text" name="pwd" id="pwd" required value=""> <br>
-    <label for="passwordrepeat">Password Repeat : </label>
-    <input type="password" name="pwdrepeat" id="pwdrepeat" required value=""> <br>
-    <button type="submit" name="submit">Login</button>
-  </form>
-  </div>
-  </form>
-  </div>
-  </div>
-  </form>
-  </div>
-  </div>
-  <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+// Function to validate the user's credentials (replace with your actual database query and validation logic)
+function isValidUser($username, $password, $pdo) {
+    // Replace this with your actual database query and validation logic
+    $sql = "SELECT * FROM users WHERE username = :username";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindParam(':username', $username);
+    $stmt->execute();
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    if ($user) {
+        // User found, compare the provided password with the stored password hash
+        $storedPasswordHash = $user['password']; // Assuming the password is stored as a hash in the database
+        if (password_verify($password, $storedPasswordHash)) {
+            return true; // Credentials are valid
+        }
+    }
+
+    return false; // Credentials are invalid
+}
+?>
 </html>
