@@ -39,3 +39,4 @@ function isValidUser($username, $password, $pdo) {
     return false; // Credentials are invalid
 }
 ?>
+</html>

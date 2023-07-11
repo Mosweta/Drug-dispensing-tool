@@ -35,10 +35,10 @@
 
 
         <div class="form-box.login">
-            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
 
-            <h2>Login</h2>
-            <form action="includes/login.inc.php" method="post" autocomplete="off">
+
+            <h2>Register</h2>
+            <form action="includes/signup.inc.php" method="post" autocomplete="off">
                 <div class="input-box">
                     <span>
                         <div class="icon"><ion-icon name="person-circle"></ion-icon></div>
@@ -49,12 +49,29 @@
                 </div>
                 <div class="input-box">
                     <span>
+                        <div class="icon"><ion-icon name="mail"></ion-icon></div>
+                    </span>
+
+                    <input type="email" name="email" id="email" required value="">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span>
                         <div class="icon">
                             <ion-icon name="lock-closed"></ion-icon>
                         </div>
                     </span>
                     <input type="password" name="pwd" id="pwd" required value="">
                     <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span>
+                        <div class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </div>
+                    </span>
+                    <input type="password" name="pwdrepeat" id="pwdrepeat" required value="">
+                    <label>Repeat Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">
@@ -66,7 +83,7 @@
                         <a href="signup.php" class="register-link">Signup</a>
                     </p>
                 </div>
-                <button type="submit" name="submit">Login</button>
+                <button type="submit" name="submit">Sign Up</button>
             </form>
         </div>
 
