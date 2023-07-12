@@ -1,20 +1,4 @@
-h1 {
-color: blue;
-}
 
-.one{
-    background-color: yellow;
-    border: solid 2px black;
-}
-li em {
-    color: red;
-    font-size: 300%;
-}
-
-  h1 + p+ p{
-    font-size: 200%;
-    font-style: italic;
-    font-family: sans-serif;
 
 @import url('https://fonts.googleapis.com/css2?family=poppin');
 * {
@@ -248,4 +232,4 @@ transform: translateX(400px);
 }
 .login-register p a:hover{
     text-decoration: underline;
-}}
+    }
