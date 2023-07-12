@@ -198,7 +198,7 @@ session_start();
   <break>
   <section>
     
-    <h1>WELCOME TO S.C.H WHERE THE PATIENTS HEALTHCARE IS PUT FIRST</h1>
+    <h1>WELCOME TO S.C.H WHERE THE PATIENTS HEALTHCARE COMES FIRST</h1>
     <p>WE BELIEVE WE ARE ONE OF THE BEST AND OUR PATIENTS SAY SO TOO:</p>
     <ul>
       <li>"The doctors and staff at SunCityHospital provided excellent care. I highly recommend their services." - Deo Moriasi </li>
