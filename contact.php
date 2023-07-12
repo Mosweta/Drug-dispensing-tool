@@ -20,13 +20,19 @@ session_start();
       <img src="images/SCH 2.jpg" alt="S.C.H logo" width="100px" height="80px" border-radius="50px" 6px; />
     </h2>
     <nav class="navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.php">Home</a>
+      <a href="about.php">About</a>
+      <a href="services.php">Services</a>
       <button class="btnLogin-popup">Login</button>
     </nav>
   </header>
 </body>
-
+<section>
+<h1>OUR CONTACT INFORMATION:</h1>
+    <p>Hospital Name: SunCity Hospital</p>
+    <p>Location: MADARAKA,NAIROBI,KENYA</p>
+    <p>Phone: 0712345678/0787654321</p>
+    <p>Email: suncityhospital@gmail.com</p>
+    <p>Website: www.suncityhospital.com<p>
+</section>
 </html>
