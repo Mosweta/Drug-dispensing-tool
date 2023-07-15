@@ -15,7 +15,7 @@ session_start();
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="login">
   <header>
     <h2 class="logo">
       <img src="images/SCH 2.jpg" alt="S.C.H logo" width="100px" height="80px" border-radius="50px" 6px; />
@@ -28,6 +28,12 @@ session_start();
       <button class="btnLogin-popup">Login</button>
     </nav>
   </header>
+  <section>
+    <video class="video" width="400" height="400" autoplay>
+      <source src="Myvideo2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 </body>
 
 </html>
