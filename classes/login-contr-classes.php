@@ -7,6 +7,7 @@ class Logincontr extends Login
 
 
 
+
     public function __construct($uid, $pwd)
     {
         $this->uid = $uid;

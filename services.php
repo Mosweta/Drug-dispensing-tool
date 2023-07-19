@@ -14,16 +14,38 @@
 <body>
   <header>
     <h2 class="logo">
-      <img src="images/SCH 2.jpg" alt="S.C.H logo" width="100px" height="80px" border-radius="50px" 6px; />
+      <img src="images/SCH 2.jpg" alt="S.C.H logo" width="60px" height="60px" border-radius="30px" 6px; />
     </h2>
     <nav class="navigation">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.php">Home</a>
+      <a href="about.php">About</a>
+      <a href="contact.php">Contact</a>
       <button class="btnLogin-popup">Login</button>
     </nav>
   </header>
 </body>
+</head>
+
+<body>
+  <break>
+    <section>
+      <h1> WE OFFER THE FOLLOWING SERVICES:</h1>
+      <ul>
+        <li>Emergency Care</li>
+        <li>Surgery</li>
+        <li>Maternity Care</li>
+        <li>Pediatrics</li>
+        <li>Internal Medicine</li>
+        <li>Radiology</li>
+        <li>Laboratory Services</li>
+        <li>Pharmacy</li>
+        <li>Nutrition and Dietetics</li>
+        <li>Social Services</li>
+        <li>Physical Therapy</li>
+        <li>Psychiatry</li>
+      </ul>
+</body>
+
+</html>
 
 </html>

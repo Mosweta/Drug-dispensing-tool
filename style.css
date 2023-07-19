@@ -137,6 +137,9 @@ border-radius: 60px;
     width :380px;
     margin:auto;
     background: transparent;
+    position: relative;
+    display: flex;
+    bottom: -140px;
 }
 .wrapper {
     position: relative;
@@ -174,7 +177,7 @@ transform: translateX(0);
     transform: translateX(-400px);
 }
 .wrapper.form-box.register{
-position: absolute;
+position: relative;
 transition: none;
 transform: translateX(400px);
 }
@@ -297,4 +300,11 @@ transform: translateX(400px);
         overflow: hidden;
         height: 50px;
         width: 50px;
+    }
+    .comment{
+        width: 20px;
+        height: 20px;
+    }
+    videopage{
+        background: url(images/francesco-ungaro-So-_XgNXAFY-unsplash.jpg);   
     }

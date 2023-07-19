@@ -2,18 +2,24 @@
 class Signupcontr extends Signup
 {
 
+
+
     private $uid;
     private $pwd;
     private $pwdRepeat;
     private $email;
+    private $usertype;
 
 
-    public function __construct($uid, $pwd, $pwdRepeat, $email,)
+    public function __construct($uid, $pwd, $pwdRepeat, $email, $usertype)
     {
+
         $this->uid = $uid;
+
         $this->pwd = $pwd;
         $this->pwdRepeat = $pwdRepeat;
         $this->email = $email;
+        $this->usertype = $usertype;
     }
 
     public function signupUser()
@@ -34,16 +40,17 @@ class Signupcontr extends Signup
             header("location: ../index.php?error=passwords dont match");
         }
         if ($this->uidTakenCheck() == false) {
-            header("location: ../index.php?error=Username or email taken");
+            echo "Username already taken. Please choose a different username.";
+            header("location: ../signup.php?error=Please choose a different username");
         }
 
-        $this->setUser($this->uid, $this->pwd, $this->email);
+        $this->setUser($this->uid, $this->pwd, $this->email, $this->usertype);
     }
 
     private function emptyInput()
     {
 
-        if (empty($this->uid) || empty($this->pwd) || empty($this->pwdRepeat) || empty($this->email)) {
+        if (empty($this->uid) || empty($this->pwd) | empty($this->pwdRepeat) || empty($this->email) || empty($this->usertype)) {
             $result = false;
         } else {
             $result = true;

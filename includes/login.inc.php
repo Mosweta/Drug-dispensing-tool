@@ -6,6 +6,8 @@ if (isset($_POST["submit"])) {
 
 
 
+
+
     // instantiate SignupContr class
     include "../classes/Dbh.classes.php";
     include "../classes/login.classes.php";
@@ -15,6 +17,5 @@ if (isset($_POST["submit"])) {
     // Running error handlers and user signup
 
     $login->loginUser();
-    // Going back to front page
-    header("location: ../index.php?error=none");
+    header("location: ../login-redirect.php?error=none");
 }
