@@ -6,12 +6,9 @@ $password = "";
 $database = "suncityhospital";
 
 //create connection
-$conn = new mysqli($servername, $username, $password, $database);
+$con = new mysqli($servername, $username, $password, $database);
 //Check connection
-if(!$conn){
+if(!$con){
 	die("Connection failed:".mysqli_connect_error());
 }
 echo "Connected successfully";
- 
-
-?>

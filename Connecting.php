@@ -2,9 +2,9 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-
+$database = "suncityhospital";
 //create connection
-$conn = mysqli_connect($servername, $username, $password);
+$conn = mysqli_connect($servername, $username, $password,$database);
 
 //check connection
 if(!$conn){
@@ -14,4 +14,3 @@ echo "WELCOME TO SUN CITY HOSPITAL.";
 echo"<pre>";
     echo"WHERE YOUR HEALTH MATTERS TO US.";
     echo"</pre>";
-?>
