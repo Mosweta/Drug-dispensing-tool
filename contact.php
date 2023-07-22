@@ -28,11 +28,13 @@ session_start();
   </header>
 </body>
 <section>
-<h1>OUR CONTACT INFORMATION:</h1>
-    <p>Hospital Name: SunCity Hospital</p>
-    <p>Location: MADARAKA,NAIROBI,KENYA</p>
-    <p>Phone: 0712345678/0787654321</p>
-    <p>Email: suncityhospital@gmail.com</p>
-    <p>Website: www.suncityhospital.com<p>
+  <h1>OUR CONTACT INFORMATION:</h1>
+  <p>Hospital Name: SunCity Hospital</p>
+  <p>Location: MADARAKA,NAIROBI,KENYA</p>
+  <p>Phone: 0712345678/0787654321</p>
+  <p>Email: suncityhospital@gmail.com</p>
+  <p>Website: www.suncityhospital.com
+  <p>
 </section>
+
 </html>

@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -79,11 +81,11 @@ session_start();
       background: #fff;
       color: #162938;
     }
-   
   </style>
 </head>
 
 <body>
+
   <header>
     <h2 class="logo">
       <img src="images/SCH 2.jpg" alt="S.C.H logo" />
@@ -98,26 +100,79 @@ session_start();
       <?php
       if (isset($_SESSION["userid"])) {
       ?>
-        <a href="#">
-          <?php echo "    Welcome   ";
-          echo $_SESSION["useruid"]; ?>
-        </a>
-        <a href="includes/logout.inc.php">Logout</a>
+        <a href="#"><?php echo "    Welcome,";
+                    echo " ";
+
+
+                    echo $_SESSION["useruid"]; ?></a>
+        <img class="navLogin" src="images/myphoto2.jpg" alt="my name" width="50px" height="50px" border-radius="50px" 6px;>
+
+        <button class="btnLogin-popup"><a href="includes/logout.inc.php">Logout</a></button>
+
       <?php
       } else {
       ?>
-        <a href="signup.php">Signup</a>
-      <?php
-      }
-      ?>
-      <button onclick="redirectToLoginPage()">Login</button>
-      <script>
-        function redirectToLoginPage() {
-          window.location.href = "logpage.php";
+        <a href=" signup.php">Signup</a>
+        <button class="btnLogin-popup" onclick="redirectToLoginpage()">Login</button>
+        <script>
+          function redirectToLoginpage() {
+            window.location.href = "logpage.php";
+          }
+          <?php
         }
-      </script>
+          ?>
+        </script>
     </nav>
   </header>
+  <section class="home">
+    <div class="content">
+      <h1>Sun City Hospital Healthcare</h1>
+      <p>Welcome to Sun City Hospital healthcare management system <br>
+        This is best place to access quality healthcare at the palm of your hands <br>
+        click the button to find out</p>
+
+      <button class="btn_cta"> <a href="video.php">learn more</a></button>
+
+    </div>
+    <div>
+        <!-- Replace 'VIDEO_URL' with the URL or path to your video -->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sDjbR5jNvdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- If your video is in other formats, add additional <source> tags accordingly -->
+    </div>
+  </section>
+  <section class="about">
+    <div class="content">
+      <h1>About Us</h1>
+      <p>We are a healthcare provider system who put our users needs as our first <br>
+        priority. In our system we have put into consideration various stakeholders <br>
+        Instead of only focusing on doctors and administrators, <br>
+        we also focus on patients.They can now even book appointments.</p>
+      <button class="btn_cta"> <a href="services.php">Login</a></button>
+    </div>
+  </section>
+  <section class="services">
+    <div class="content">
+      <h1>Our Services</h1>
+      <p>We as a provider care for all that is why through our system <br> the users can do a whole range of differnt things. <br>
+        book appointments, register new users,view details <br>
+        write prescriptions among others</p>
+      <button class="btn_cta"> <a href="signup.php">Sign up</a></button>
+    </div>
+  </section>
+  <section class="Contact">
+    <div class="content">
+      <h1>Contact Us</h1>
+      <p>You can contact us via the number:0200345786 <br>
+        or you can find us via the email: suncity@gmail.com</p>
+      <button class="btn_cta"> <a href="signup.php">Sign up</a></button>
+    </div>
+  </section>
+  se
+  <video width="400" height="400" autoplay>
+    <source src="myvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </body>
 
 </html>
@@ -141,6 +196,7 @@ session_start();
       padding: 0;
       font-family: 'poppins', sans-serif;
     }
+
     section {
       flex-grow: 1;
       display: flex;
@@ -196,25 +252,25 @@ session_start();
 
 <body>
   <break>
-  <section>
-    
-    <h1>WELCOME TO S.C.H WHERE THE PATIENTS HEALTHCARE COMES FIRST</h1>
-    <p>WE BELIEVE WE ARE ONE OF THE BEST AND OUR PATIENTS SAY SO TOO:</p>
-    <ul>
-      <li>"The doctors and staff at SunCityHospital provided excellent care. I highly recommend their services." - Deo Moriasi </li>
-      <li>"I had a great experience at SunCityHospital. The facilities are top-notch, and the staff is friendly and professional." - Owen Riri</li>
-      <li>"The hospital offers high quality services, it is one of the best. " - Mark Ngeno</li>
-      <li>"The hospital offers 24/7 healthcare services and is well equipped!." - Tom Ndemo</li>
-    </ul>
-    <button onclick="displayNewQuote()">Click for a New Quote</button>
-    <p id="quote"></p>
-    <script>
-      function displayNewQuote() {
-        document.getElementById("quote").innerHTML = "An apple a day keeps the doctor away.";
-      }
-    </script>
-  </section>
-    </break>
+    <section>
+
+      <h1>WELCOME TO S.C.H WHERE THE PATIENTS HEALTHCARE COMES FIRST</h1>
+      <p>WE BELIEVE WE ARE ONE OF THE BEST AND OUR PATIENTS SAY SO TOO:</p>
+      <ul>
+        <li>"The doctors and staff at SunCityHospital provided excellent care. I highly recommend their services." - Deo Moriasi </li>
+        <li>"I had a great experience at SunCityHospital. The facilities are top-notch, and the staff is friendly and professional." - Owen Riri</li>
+        <li>"The hospital offers high quality services, it is one of the best. " - Mark Ngeno</li>
+        <li>"The hospital offers 24/7 healthcare services and is well equipped!." - Tom Ndemo</li>
+      </ul>
+      <button onclick="displayNewQuote()">Click for a New Quote</button>
+      <p id="quote"></p>
+      <script>
+        function displayNewQuote() {
+          document.getElementById("quote").innerHTML = "An apple a day keeps the doctor away.";
+        }
+      </script>
+    </section>
+  </break>
   <footer>
     <p>&copy; <?php echo date("12/7/2023"); ?> SUN CITY HOSPITAL. All rights reserved.</p>
   </footer>

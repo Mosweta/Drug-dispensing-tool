@@ -72,18 +72,22 @@
                     </span>
                     <input type="password" name="pwdrepeat" id="pwdrepeat" required value="">
                     <label>Repeat Password</label>
+
                 </div>
-                <div class="remember-forgot">
-                    <label><input type="checkbox">
-                        Remember me</label>
-                    <a href="passwordforgot.php">Forgot Password?</a>
+                <div class="input-box">
+                    <select name="user_type" required>
+                        <option id="patient" value="Patient">Patient</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Admin">Admin</option>
+                        <option value="Pharmacist">Pharmacist</option>
+                    </select>
                 </div>
                 <div class="login-register">
-                    <p>Don't have an account?
-                        <a href="signup.php" class="register-link">Signup</a>
+                    <p>Already have an account?
+                        <a href="logpage.php" class="register-link">Login</a>
                     </p>
                 </div>
-                <button type="submit" name="submit">Sign Up</button>
+                <button class="btn" type="submit" name="submit">Sign Up</button>
             </form>
         </div>
 
@@ -93,8 +97,7 @@
     </div>
     </div>
     <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+
+
 
 </html>

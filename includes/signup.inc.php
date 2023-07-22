@@ -5,13 +5,14 @@ if (isset($_POST["submit"])) {
     $pwd = $_POST["pwd"];
     $pwdRepeat = $_POST["pwdrepeat"];
     $email = $_POST["email"];
+    $usertype = $_POST["user_type"];
 
 
     // instantiate SignupContr class
     include "../classes/Dbh.classes.php";
     include "../classes/Signup.classes.php";
     include "../classes/signup-contr.classes.php";
-    $signup = new Signupcontr($uid, $pwd, $pwdRepeat, $email);
+    $signup = new Signupcontr($uid, $pwd, $pwdRepeat, $email, $usertype);
 
     // Running error handlers and user signup
 

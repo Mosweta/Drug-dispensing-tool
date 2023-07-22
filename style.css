@@ -6,14 +6,61 @@ box-sizing: border-box;
 font-family: 'poppins', sans-serif;
 
 }
-body{
+section{
     display: flex;
-    overflow:scroll;
+    overflow: scroll;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: aqua;
+    background-position: center;
+}
+.home{
+    background:url(images/5742303.jpg)no-repeat;
+    background-color: aqua;
+    overflow: hidden;
+    line-height: 30px;
+    letter-spacing: 1.25px;
+}
+
+section.about{
+    background: url(images/francesco-ungaro-So-_XgNXAFY-unsplash.jpg)no-repeat;
+    background-color: aqua;
+    overflow: hidden;
+    line-height: 30px;
+    letter-spacing: 1.25px;
+    background-position: center;
+    background-image: 100PX 100PX;
+}
+.services{
+    background: url(images/francesco-ungaro-So-_XgNXAFY-unsplash.jpg)no-repeat;
+    background-color: aqua;
+    overflow: hidden;
+    line-height: 30px;
+    letter-spacing: 1.25px;
+    font-size: medium;
+   
+}
+.Contact{
+    background: url(images/francesco-ungaro-So-_XgNXAFY-unsplash.jpg);
+    background-color: aqua;
+    overflow: hidden;
+    line-height: 30px;
+    letter-spacing: 1.25px; 
+}
+
+body.login{
+    display: flex;
+    overflow: scroll;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
     background:url(images/5742303.jpg)no-repeat;
     background-position: center;
+}
+.content{
+    align-items: right;
 }
 
 header{
@@ -27,6 +74,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 z-index: 99;
+backdrop-filter: blur(10px);
 }
 .logo{
     font-size: 2em;
@@ -40,6 +88,11 @@ z-index: 99;
     text-decoration: none;
     font-weight: 500;
 margin-left: 40px;
+
+}
+.navLogin{
+border: none;
+border-radius: 60px;
 
 }
 .navigation a::after {
@@ -72,15 +125,21 @@ margin-left: 40px;
     font-weight: 500;
     margin-left: 40px;
     transition:.5s;
+    align-items: center;
 }
 .navigation .btnLogin-popup:hover{
     background: #fff;
     color: #162938;
 }
+
+
 .container{
     width :380px;
     margin:auto;
     background: transparent;
+    position: relative;
+    display: flex;
+    bottom: -140px;
 }
 .wrapper {
     position: relative;
@@ -118,7 +177,7 @@ transform: translateX(0);
     transform: translateX(-400px);
 }
 .wrapper.form-box.register{
-position: absolute;
+position: relative;
 transition: none;
 transform: translateX(400px);
 }
@@ -126,22 +185,7 @@ transform: translateX(400px);
     transition: transform .18s ease;
     transform: translateX(0);
     }
-.wrapper .icon-close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 45px;
-    height: 45px;
-    background: #162938;
-    font-size: 2em;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom-left-radius: 20px;
-    cursor: pointer;
-    z-index: 1;
-}
+
 .form-box h2{
     font-size: 2em;
     color: #162938;
@@ -450,6 +494,7 @@ transform: translateX(400px);
     font-size: 1em;
     color: #fff;
     font-weight: 500;
+    align-self: auto;
 }
 .login-register{
     font-size: .9em;
@@ -465,4 +510,35 @@ transform: translateX(400px);
 }
 .login-register p a:hover{
     text-decoration: underline;
-}
+    }
+    
+    .btn_cta{
+        width:100px;
+        height: 40px;
+        background-color: #16a19f;
+        border: none ;
+        outline: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1em;
+        color: #fff;
+        font-weight: 500;
+        margin-left:  20 px; 
+
+    }
+    section{
+        padding: 100px 200px;
+        align-items: right;
+    }
+    video{
+        overflow: hidden;
+        height: 50px;
+        width: 50px;
+    }
+    .comment{
+        width: 20px;
+        height: 20px;
+    }
+    videopage{
+        background: url(images/francesco-ungaro-So-_XgNXAFY-unsplash.jpg);   
+    }

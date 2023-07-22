@@ -28,23 +28,23 @@
 
 <body>
   <break>
-  <section> 
-   <h1> WE OFFER THE FOLLOWING SERVICES:</h1>
-    <ul>
-      <li>Emergency Care</li>
-      <li>Surgery</li>
-      <li>Maternity Care</li>
-      <li>Pediatrics</li>
-      <li>Internal Medicine</li>
-      <li>Radiology</li>
-      <li>Laboratory Services</li>
-      <li>Pharmacy</li>
-      <li>Nutrition and Dietetics</li>
-      <li>Social Services</li>
-      <li>Physical Therapy</li>
-      <li>Psychiatry</li>
-</ul>
-    </body>
+    <section>
+      <h1> WE OFFER THE FOLLOWING SERVICES:</h1>
+      <ul>
+        <li>Emergency Care</li>
+        <li>Surgery</li>
+        <li>Maternity Care</li>
+        <li>Pediatrics</li>
+        <li>Internal Medicine</li>
+        <li>Radiology</li>
+        <li>Laboratory Services</li>
+        <li>Pharmacy</li>
+        <li>Nutrition and Dietetics</li>
+        <li>Social Services</li>
+        <li>Physical Therapy</li>
+        <li>Psychiatry</li>
+      </ul>
+</body>
 
 </html>
 

@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="login">
 
 
     <header>
         <h2 class="logo">
             <img src="images/SCH 2.jpg" alt="S.C.H logo" width="100px" height="80px" border-radius="50px" 6px; />
         </h2>
+
         <nav class="navigation">
             <a href="index.php">Home</a></li>
             <a href="about.php">About</a>
@@ -27,11 +28,11 @@
         <nav class="navigation">
 
             <a href="signup.php">Signup</a>
-            <button class="btnLogin-popup">Login</button>
+
         </nav>
     </header>
     </div>
-    <div class="container">
+    <div class="wrapper">
 
 
         <div class="form-box.login">
@@ -62,11 +63,11 @@
                     <a href="passwordforgot.php">Forgot Password?</a>
                 </div>
                 <div class="login-register">
-                    <p>Don't have an account?
+                    <p>Not a member?
                         <a href="signup.php" class="register-link">Signup</a>
                     </p>
                 </div>
-                <button type="submit" name="submit">Login</button>
+                <button class="btn" type="submit" name="submit">Login</button>
             </form>
         </div>
 
@@ -80,4 +81,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 <p></p>
+
 </html>

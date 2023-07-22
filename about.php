@@ -15,7 +15,7 @@ session_start();
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="login">
   <header>
     <h2 class="logo">
       <img src="images/SCH 2.jpg" alt="S.C.H logo" width="100px" height="80px" style="border-radius: 50px; margin-right: 6px;" />
@@ -28,7 +28,7 @@ session_start();
     </nav>
   </header>
   <section>
-  <h1>About SunCity Hospital:</h1>
+    <h1>About SunCity Hospital:</h1>
     <h5>SunCity Hospital is a leading healthcare facility dedicated to providing exceptional medical care and services to the community. With state-of-the-art facilities and a team of highly skilled healthcare professionals, we strive to deliver the highest standard of patient-centered care.</h5>
 
   </section>
